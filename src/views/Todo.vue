@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-
     <v-text-field
       v-model="newTaskTitle"
       @click:append="addTask"
@@ -11,7 +10,7 @@
       append-icon="mdi-plus"
       hide-details
       clearable
-     ></v-text-field>
+    ></v-text-field>
 
     <v-list
       class="pt-0"
@@ -31,7 +30,7 @@
                 color="primary"
               ></v-checkbox>
             </v-list-item-action>
-
+  
             <v-list-item-content>
               <v-list-item-title
               :class="{'text-decoration-line-through' : task.done}">
